@@ -109,7 +109,6 @@ public class DiaryService {
 
 
     public List<Diary> readDiary(LocalDate date) {
-        logger.debug("read diary");
         return diaryRepository.findAllByDate(date);
     }
 
